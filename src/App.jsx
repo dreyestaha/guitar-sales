@@ -17,11 +17,10 @@ function App() {
           <h2 className="text-center">Nuestra Colección</h2>
 
           <div className="row mt-5">
-              {data.map(() =>(
+              {data.map((gtr) =>(
                 <Guitar 
-                // prop price que va al componente Guitar
-                price = {100}
-                auth = {true}
+                key = {gtr.id}
+                guitar = {gtr}
                 
                 />
                 ))}
